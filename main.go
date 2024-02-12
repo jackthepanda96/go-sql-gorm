@@ -7,6 +7,7 @@ import (
 )
 
 func main() {
+	// aku mulai ngerjain
 	database := config.InitMysql()
 	config.Migrate(database)
 	var input int
