@@ -29,8 +29,8 @@ func Register(connection *gorm.DB, newUser Users) (bool, error) {
 
 func Login(connection *gorm.DB, hp string, password string) (Users, error) {
 	var result Users
-	err := connection.Where("hp = ? AND password = ?", hp, password).First(&result).Error
-	if err != nil {
+	query := connection.Where("hp = ? AND password = ?", hp, password).First(&result)
+	if err := query.Error; err != nil {
 		return Users{}, err
 	}
 
