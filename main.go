@@ -7,10 +7,11 @@ import (
 )
 
 func main() {
-	// aku mulai ngerjain
+	// code 0
 	database := config.InitMysql()
 	config.Migrate(database)
 	var input int
+	// code 1
 	for input != 99 {
 		fmt.Println("Pilih menu")
 		fmt.Println("1. Login")
@@ -18,6 +19,7 @@ func main() {
 		fmt.Println("99. Exit")
 		fmt.Print("Masukkan pilihan:")
 		fmt.Scanln(&input)
+		// code 5
 		if input == 1 {
 			var isRunning bool = true
 			for isRunning {
