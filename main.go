@@ -24,6 +24,8 @@ func main() {
 		if input == 1 {
 			var isRunning bool = true
 			for isRunning {
+				fmt.Println("halo bro")
+				fmt.Println("hahaa")
 				var loggedIn users.Users
 				err := errors.New("herror")
 				fmt.Println("halo bro")
