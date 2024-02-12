@@ -3,6 +3,7 @@ package main
 import (
 	"be21/config"
 	"be21/users"
+	"errors"
 	"fmt"
 )
 
@@ -24,11 +25,12 @@ func main() {
 				var hp string
 				var password string
 				var loggedIn users.Users
-				fmt.Println("Masukkan HP")
+				// fmt.Println("Masukkan HP")
 				fmt.Scanln(&hp)
-				fmt.Println("Masukkan Password")
+				// fmt.Println("Masukkan Password")
 				fmt.Scanln(&password)
-				loggedIn, err := users.Login(database, hp, password)
+				fmt.Println("halo bro")
+				err := errors.New("herror")
 				if err == nil {
 					fmt.Println("Selamat Datang,", loggedIn.Nama)
 				} else {
