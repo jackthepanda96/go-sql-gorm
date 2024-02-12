@@ -23,14 +23,9 @@ func main() {
 		if input == 1 {
 			var isRunning bool = true
 			for isRunning {
-				var hp string
-				var password string
+				fmt.Println("halo bro")
+				fmt.Println("hahaa")
 				var loggedIn users.Users
-				fmt.Println("halo bro")
-				fmt.Scanln(&hp)
-				fmt.Println("halo bro")
-				fmt.Scanln(&password)
-				fmt.Println("halo bro")
 				err := errors.New("herror")
 				if err == nil {
 					fmt.Println("Selamat Datang,", loggedIn.Nama)
