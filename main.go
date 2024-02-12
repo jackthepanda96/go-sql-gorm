@@ -14,24 +14,20 @@ func main() {
 	var input int
 	// code 1
 	for input != 99 {
-		var a = 1
-		var b = 5
-		fmt.Println(b + a)
+		var x = 1
+		var y = 5
+		fmt.Println("tokoku")
+		fmt.Println(x + y)
 		fmt.Print("Masukkan pilihan:")
 		fmt.Scanln(&input)
 		// code 5
 		if input == 1 {
 			var isRunning bool = true
 			for isRunning {
-				var hp string
-				var password string
 				var loggedIn users.Users
-				fmt.Println("halo bro")
-				fmt.Scanln(&hp)
-				fmt.Println("halo bro")
-				fmt.Scanln(&password)
-				fmt.Println("halo bro")
 				err := errors.New("herror")
+				fmt.Println("halo bro")
+				fmt.Println("hahaa")
 				if err == nil {
 					fmt.Println("Selamat Datang,", loggedIn.Nama)
 				} else {
