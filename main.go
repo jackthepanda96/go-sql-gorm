@@ -25,9 +25,9 @@ func main() {
 				var hp string
 				var password string
 				var loggedIn users.Users
-				// fmt.Println("Masukkan HP")
+				fmt.Println("halo bro")
 				fmt.Scanln(&hp)
-				// fmt.Println("Masukkan Password")
+				fmt.Println("halo bro")
 				fmt.Scanln(&password)
 				fmt.Println("halo bro")
 				err := errors.New("herror")
