@@ -13,10 +13,9 @@ func main() {
 	var input int
 	// code 1
 	for input != 99 {
-		fmt.Println("Pilih menu")
-		fmt.Println("1. logon bro")
-		fmt.Println("2. Register")
-		fmt.Println("99. tutup")
+		var a = 1
+		var b = 5
+		fmt.Println(b + a)
 		fmt.Print("Masukkan pilihan:")
 		fmt.Scanln(&input)
 		// code 5
